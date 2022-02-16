@@ -12,7 +12,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -96,7 +96,6 @@ p {
   position: fixed;
   width: 100%;
   z-index: 9999;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 .sticky {
   position: fixed;
