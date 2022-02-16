@@ -230,7 +230,7 @@
         <h2 class="news__heading">News & Events</h2>
         <div class="news__cards">
           <div class="news__card">
-            <img src="./images/feature2.jpeg" alt="feature" width="390" height="261">
+            <img class="news__img" src="./images/feature2.jpeg" alt="feature" width="390" height="261">
             <div class="news__badge">
               <span>6</span>
               <span>JULY</span>
@@ -246,7 +246,7 @@
             </div>
           </div>
           <div class="news__card">
-            <img src="./images/feature1.jpeg" alt="feature" width="390" height="261">
+            <img class="news__img" src="./images/feature1.jpeg" alt="feature" width="390" height="261">
             <div class="news__badge">
               <span>6</span>
               <span>JULY</span>
@@ -263,7 +263,7 @@
             </div>
           </div>
           <div class="news__card">
-            <img src="./images/feature2.jpeg" alt="feature" width="390" height="261">
+            <img class="news__img" src="./images/feature2.jpeg" alt="feature" width="390" height="261">
             <div class="news__badge">
               <span>6</span>
               <span>JULY</span>
@@ -448,10 +448,33 @@
     var slider2 = tns({
       container: ".trustees__slider",
       edgePadding: 0,
-      items: 4,
+      items: 3,
       swipeAngle: false,
       speed: 400,
       controlsText: ["<", ">"],
+      responsive: {
+        640: {
+          edgePadding: 20,
+          gutter: 20,
+          center: true,
+          items: 1,
+          autoWidth: true,
+        },
+
+        700: {
+          gutter: 30,
+          autoWidth: true,
+          center: true,
+
+        },
+
+        900: {
+          autoWidth: true,
+          items: 3,
+          center: true
+        },
+
+      }
     });
   </script>
 </body>
