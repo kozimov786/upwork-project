@@ -89,6 +89,7 @@
     </div>
     <div class="hero">
       <div class="my-slider">
+
         <div class="slider1">
           <div class="slider__info">
             <h3 class="slider__heading">
@@ -162,22 +163,58 @@
     <section class="area">
       <h2 class="area__heading">Areas of Focus</h2>
       <div class="container area__container">
+
         <div class="area__card">
           <img class="area__img" src="./images/slider1.jpg" alt="" width="350" height="381">
           <div class="area__btn">
             <a class="area__link" href="#">Education</a>
           </div>
         </div>
+
         <div class="area__card">
           <img class="area__img" src="./images/slider2.jpg" alt="" width="350" height="381">
           <div class="area__btn">
             <a class="area__link" href="#">Education</a>
           </div>
         </div>
+
         <div class="area__card">
           <img class="area__img" src="./images/slider3.jpg" alt="" width="350" height="381">
           <div class="area__btn">
             <a class="area__link" href="#">Education</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trustees">
+      <div class="container">
+        <h1 class="trustees__heading">Board of Trustees</h1>
+        <div class="trustees__slider">
+          <div class="card">
+            <img src="./images/slider1.jpg" alt="" width="290" height="290" />
+            <h3 class="card__title">Lola</h3>
+            <p class="card__text">Lorem, ipsum dolor.</p>
+          </div>
+          <div class="card">
+            <img src="./images/slider2.jpg" alt="" width="290" height="290" />
+            <h3 class="card__title">Lola</h3>
+            <p class="card__text">Lorem, ipsum dolor.</p>
+          </div>
+          <div class="card">
+            <img src="./images/slider3.jpg" alt="" width="290" height="290" />
+            <h3 class="card__title">Lola</h3>
+            <p class="card__text">Lorem, ipsum dolor.</p>
+          </div>
+          <div class="card">
+            <img src="./images/slider1.jpg" alt="" width="290" height="290" />
+            <h3 class="card__title">Lola</h3>
+            <p class="card__text">Lorem, ipsum dolor.</p>
+          </div>
+          <div class="card">
+            <img src="./images/slider2.jpg" alt="" width="290" height="290" />
+            <h3 class="card__title">Lola</h3>
+            <p class="card__text">Lorem, ipsum dolor.</p>
           </div>
         </div>
       </div>
@@ -200,6 +237,15 @@
       items: 1,
       swipeAngle: false,
       speed: 400,
+      controlsText: ["", ""],
+    });
+    var slider2 = tns({
+      container: ".trustees__slider",
+      edgePadding: 0,
+      items: 3,
+      swipeAngle: false,
+      speed: 400,
+      controlsText: ["<", ">"],
     });
   </script>
 </body>
