@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Piter & Mirian Foundation</title>
@@ -32,11 +36,100 @@
         </ul>
       </div>
     </div>
+    <div class="navbar">
+      <div class="container navbar__container">
+        <a class="nav__logo" href="#">
+          <img class="nav__logo--img" src="./images/logo.png" alt="logo" width="187" height="67">
+        </a>
+        <btn class="burger__btn">
+          <i class="fa-solid fa-bars"></i>
+        </btn>
+        <nav class="nav">
+          <ul class="nav__menu menu">
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Aims & Objectives</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Areas of Focus</a>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Education</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Health Care</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Poverty Reduction</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Board of Trustees</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Projects Executed</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News & Events</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="my-slider">
+        <div class="slider1">
+          <div class="slider__info">
+            <h3 class="slider__heading">
+              WE HELP THOUSANDS OF CHILDS TO GET THEIR EDUCATION, NOW WE NEED YOUR HELP.
+            </h3>
+          </div>
+        </div>
+        <div class="slider2">
+          <div class="slider__info">
+            <h3 class="slider__heading">
+              WE HELP THOUSANDS OF CHILDS TO GET THEIR EDUCATION, NOW WE NEED YOUR HELP.
+            </h3>
+          </div>
+        </div>
+        <div class="slider3">
+          <div class="slider__info">
+            <h3 class="slider__heading">
+              WE HELP THOUSANDS OF CHILDS TO GET THEIR EDUCATION, NOW WE NEED YOUR HELP.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
 
 
   <script src="https://kit.fontawesome.com/4ab7fa6a81.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+    integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module">
+    var slider = tns({
+      container: ".my-slider",
+      edgePadding: 0,
+      items: 1,
+      swipeAngle: false,
+      speed: 400,
+    });
+  </script>
 </body>
 
 </html>

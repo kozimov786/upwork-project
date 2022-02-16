@@ -28,7 +28,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #191919;
+  color: #fff;
 }
 
 ul {
@@ -36,7 +36,10 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+.topbar {
+  background-color: #006d5b;
+  color: #fff;
+}
 .topbar__container {
   display: flex;
   align-items: center;
@@ -56,11 +59,201 @@ ul {
   padding: 15px;
 }
 .topbar__item:hover {
-  background-color: #91a1b4;
+  background-color: #05806b;
 }
 .topbar__link {
   margin-left: 5px;
 }
 .topbar__item > div {
   margin-right: 15px;
+}
+.navbar {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 9999;
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+.menu__link {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.menu__item {
+  padding: 10px 10px;
+  cursor: pointer;
+  position: relative;
+}
+.menu__item:hover {
+  background-color: #4f0269;
+}
+.menu__item:hover .menu__link {
+  color: #fff;
+}
+.dropdown {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 15px;
+  display: none;
+  box-shadow: 0px 2px 5px 0px rgb(125 140 159 / 46%);
+}
+.dropdown__link {
+  color: #191919;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.dropdown__link:hover {
+  color: #4f0269;
+}
+.menu__item:hover .dropdown {
+  display: block;
+  z-index: 999;
+}
+
+.menu__item--active {
+  background-color: #4f0269;
+}
+.menu__item--active .menu__link {
+  color: #fff;
+}
+.burger__btn {
+  border: none;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  text-align: center;
+  display: none;
+}
+
+/* Slider */
+.my-slider {
+  height: 100vh;
+}
+.slider__info {
+  width: 800px;
+  margin: 300px auto;
+  text-align: center;
+}
+.slider1 {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/slider1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+}
+.slider2 {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/slider2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+}
+.slider3 {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/slider3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+}
+.tns-nav {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  margin-left: 20px;
+  background-color: transparent;
+  z-index: 99;
+  color: rgb(189, 64, 64);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-70%);
+}
+.tns-nav button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(80, 79, 79);
+}
+.tns-nav .tns-nav-active {
+  background: white !important;
+}
+.tns-controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 45%;
+}
+
+.block {
+  display: block !important;
+}
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+  .burger__btn {
+    display: block;
+  }
+  .nav {
+    width: 100%;
+    padding: 20px;
+    background-color: #05806b;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+  }
+  .menu__item {
+    display: block;
+    width: 100%;
+  }
+  .nav__menu {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .topbar__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .topbar__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
