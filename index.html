@@ -197,29 +197,46 @@
         <h1 class="trustees__heading">Board of Trustees</h1>
         <div class="trustees__slider">
           <div class="card">
-            <img src="./images/slider1.jpg" alt="" width="290" height="290" />
-            <h3 class="card__title">Rouben Houston</h3>
-            <p class="card__text">Lorem, ipsum dolor.</p>
+            <img class="card__img" src="./images/slider1.jpg" alt="" width="290" height="290" />
+            <div class="card__bottom">
+              <h3 class="card__title">Rouben Houston</h3>
+              <p class="card__text">Lorem, ipsum dolor.</p>
+            </div>
           </div>
           <div class="card">
-            <img src="./images/slider2.jpg" alt="" width="290" height="290" />
-            <h3 class="card__title">Lola</h3>
-            <p class="card__text">Lorem, ipsum dolor.</p>
+            <img class="card__img" src="./images/slider2.jpg" alt="" width="290" height="290" />
+            <div class="card__bottom">
+              <h3 class="card__title">Lola</h3>
+              <p class="card__text">Lorem, ipsum dolor.</p>
+            </div>
           </div>
           <div class="card">
-            <img src="./images/slider3.jpg" alt="" width="290" height="290" />
-            <h3 class="card__title">Lola</h3>
-            <p class="card__text">Lorem, ipsum dolor.</p>
+            <img class="card__img" src="./images/slider3.jpg" alt="" width="290" height="290" />
+            <div class="card__bottom">
+              <h3 class="card__title">Lola</h3>
+              <p class="card__text">Lorem, ipsum dolor.</p>
+            </div>
           </div>
           <div class="card">
-            <img src="./images/slider1.jpg" alt="" width="290" height="290" />
-            <h3 class="card__title">Lola</h3>
-            <p class="card__text">Lorem, ipsum dolor.</p>
+            <img class="card__img" src="./images/slider1.jpg" alt="" width="290" height="290" />
+            <div class="card__bottom">
+              <h3 class="card__title">Lola</h3>
+              <p class="card__text">Lorem, ipsum dolor.</p>
+            </div>
           </div>
           <div class="card">
-            <img src="./images/slider2.jpg" alt="" width="290" height="290" />
-            <h3 class="card__title">Lola</h3>
-            <p class="card__text">Lorem, ipsum dolor.</p>
+            <img class="card__img" src="./images/slider2.jpg" alt="" width="290" height="290" />
+            <div class="card__bottom">
+              <h3 class="card__title">Lola</h3>
+              <p class="card__text">Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/slider3.jpg" alt="" width="290" height="290" />
+            <div class="card__bottom">
+              <h3 class="card__title">Lola</h3>
+              <p class="card__text">Lorem, ipsum dolor.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -447,31 +464,30 @@
     });
     var slider2 = tns({
       container: ".trustees__slider",
-      edgePadding: 0,
-      items: 3,
+      items: 4,
       swipeAngle: false,
       speed: 400,
       controlsText: ["<", ">"],
       responsive: {
-        640: {
-          edgePadding: 20,
-          gutter: 20,
-          center: true,
+        300: {
           items: 1,
-          autoWidth: true,
         },
-
+        400: {
+          items: 1,
+        },
+        540: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
         700: {
-          gutter: 30,
-          autoWidth: true,
-          center: true,
+          items: 2,
 
         },
 
-        900: {
-          autoWidth: true,
+        990: {
           items: 3,
-          center: true
         },
 
       }
