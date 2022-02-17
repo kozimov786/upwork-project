@@ -842,6 +842,9 @@ p {
   .trustees__heading {
     font-size: 28px;
   }
+  .slider__info {
+    margin-top: 200px;
+  }
   .trustees .tns-controls {
     top: 95px;
   }
