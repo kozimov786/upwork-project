@@ -11,8 +11,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato&family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -27,16 +33,26 @@
         <p class="topbar__info">Welcome to Piter & Mirian Foundation</p>
         <ul class="topbar__list">
           <li class="topbar__item">
-            <i class="fa-solid fa-phone"></i>
-            <a class="topbar__link" href="tel:+234 (0)9155502778">+234 (0)9155502778</a>
+
+            <a class="topbar__link" href="tel:+234 (0)9155502778">
+              <i class="fa-solid fa-phone"></i>
+              <p class="topbar__number">
+                +234 (0)9155502778
+              </p>
+            </a>
           </li>
           <li class="topbar__item">
-            <i class="fa-solid fa-phone"></i>
-            <a class="topbar__link" href="tel:+234 (0)9095585955">+234 (0)9095585955</a>
+            <a class="topbar__link" href="tel:+234 (0)9095585955"><i class="fa-solid fa-phone"></i>
+              <p class="topbar__number">+234
+                (0)9095585955</p>
+            </a>
           </li>
           <li class="topbar__item">
-            <i class="fa-solid fa-envelope"></i>
-            <a class="topbar__link" href="mailto:admin@PeterandMirian.org">admin@PeterandMirian.org</a>
+
+            <a class="topbar__link" href="mailto:admin@PeterandMirian.org">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="topbar__number">admin@PeterandMirian.org</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -44,7 +60,7 @@
     <div class="navbar">
       <div class="container navbar__container">
         <a class="nav__logo" href="#">
-          <img class="nav__logo--img" src="./images/logo.png" alt="logo" width="187" height="67">
+          <img class="nav__logo--img" src="./images/logo.png" alt="logo" width="297" height="67">
         </a>
         <btn class="burger__btn">
           <i class="fa-solid fa-bars"></i>
@@ -58,10 +74,12 @@
               <a class="menu__link" href="#aboutUs">About Us</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Aims & Objectives</a>
+              <a class="menu__link" href="#">Objectives</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#focus">Areas of Focus</a>
+              <a class="menu__link" href="#focus">Areas of Focus
+                <i class="fa-solid fa-caret-down dropdown__arrow"></i>
+              </a>
               <div class="dropdown">
                 <ul class="dropdown__list">
                   <li class="dropdown__item">
@@ -77,16 +95,16 @@
               </div>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#trustees">Board of Trustees</a>
+              <a class="menu__link" href="#trustees">Trustees</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Projects Executed</a>
+              <a class="menu__link" href="#">Projects</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#news">News & Events</a>
+              <a class="menu__link" href="#news">News</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#contact">Contact Us</a>
+              <a class="menu__link" href="#contact">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -136,16 +154,22 @@
         <div class="about__info">
           <span class="about__badge">WHO WE ARE</span>
           <h2 class="about__heading">About Peter and Mirian Foundation</h2>
-          <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusantium ex
-            voluptatibus possimus autem, sit cumque enim saepe tenetur dolorum iste voluptates fuga alias reiciendis? Ad
-            provident consequuntur in perferendis.</p>
+          <p class="about__text">You are welcome to our website. We welcome you to hear the story of the two types of
+            work that we do. First, we mobilize Christian communities to draw from the resources available within and
+            around them to solve the most basic problems and challenges they face.
+          </p>
+          <p class="about__text">
+            We realize that it is not that simple, which is why here we share examples of what we do in our own locality
+            hoping that other Christian communities can draw from our template and try to replicate or expand on these
+            initiatives
+          </p>
           <button class="about__btn btn-primary">Read More</button>
         </div>
         <div class="about__service">
           <ul class="about__list">
 
             <li class="about__item">
-              <img class="about__img" src="./images/help04.png" alt="" width="50" height="50">
+              <img class="about__img" src="./images/help04.png" alt="" width="65" height="60">
               <div>
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dignissimos!</p>
@@ -153,7 +177,7 @@
             </li>
 
             <li class="about__item">
-              <img class="about__img" src="./images/help05.png" alt="" width="50" height="50">
+              <img class="about__img" src="./images/help05.png" alt="" width="65" height="60">
               <div>
                 <h3>Our Mission</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dignissimos!</p>
@@ -174,6 +198,8 @@
           <div class="area__btn">
             <a class="area__link" href="#">Education</a>
           </div>
+          <a class="overlay" href="#"><i class="fa-solid fa-link"></i>
+          </a>
         </div>
 
         <div class="area__card" id="health">
@@ -181,6 +207,8 @@
           <div class="area__btn">
             <a class="area__link" href="#">Health Care</a>
           </div>
+          <a class="overlay" href="#"><i class="fa-solid fa-link"></i>
+          </a>
         </div>
 
         <div class="area__card" id="poverty">
@@ -188,6 +216,8 @@
           <div class="area__btn">
             <a class="area__link" href="#">Poverty Reduction</a>
           </div>
+          <a class="overlay" href="#"><i class="fa-solid fa-link"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -247,7 +277,7 @@
         <h2 class="news__heading">News & Events</h2>
         <div class="news__cards">
           <div class="news__card">
-            <img class="news__img" src="./images/feature2.jpeg" alt="feature" width="390" height="261">
+            <img class="news__img" src="./images/feature2.jpeg" alt="feature" width="360" height="261">
             <div class="news__badge">
               <span>6</span>
               <span>JULY</span>
@@ -257,13 +287,12 @@
               <h3 class="card__heading">Effective Pastoral Ministry In The Face Of The Covid-19 Pandemic</h3>
               <p class="card__decr">This article is a follow-up to my last article on the fate of the church in the wake
                 of the
-                devastations caused by the COVID-19 Pandemic. Because the church is in the centre of it all (please
-                don’t misunderstand me), I want to make some suggestions to priests and pastors on how ...</p>
+                devastations caused by the COVID-19 Pandemic...</p>
               <button class="btn-primary news__btn">Read More</button>
             </div>
           </div>
           <div class="news__card">
-            <img class="news__img" src="./images/feature1.jpeg" alt="feature" width="390" height="261">
+            <img class="news__img" src="./images/feature1.jpeg" alt="feature" width="360" height="261">
             <div class="news__badge">
               <span>6</span>
               <span>JULY</span>
@@ -273,14 +302,13 @@
               <h3 class="card__heading">The Church Will Never Be The Same With Covid-19</h3>
               <p class="card__decr">Nothing in living memory has altered the way we see reality and the way we live like
                 <strong>COVID-19
-                </strong> Pandemic. For the first time, almost all the public institutions, like churches, schools,
-                markets businesses were closed. Entire societies, cities, communities were on lockdown as ...
+                </strong> Pandemic...
               </p>
               <button class="btn-primary news__btn">Read More</button>
             </div>
           </div>
           <div class="news__card">
-            <img class="news__img" src="./images/feature2.jpeg" alt="feature" width="390" height="261">
+            <img class="news__img" src="./images/feature2.jpeg" alt="feature" width="360" height="261">
             <div class="news__badge">
               <span>6</span>
               <span>JULY</span>
@@ -290,15 +318,13 @@
               <h3 class="card__heading">Effective Pastoral Ministry In The Face Of The Covid-19 Pandemic</h3>
               <p class="card__decr">This article is a follow-up to my last article on the fate of the church in the wake
                 of the
-                devastations caused by the COVID-19 Pandemic. Because the church is in the centre of it all (please
-                don’t misunderstand me), I want to make some suggestions to priests and pastors on how ...</p>
+                devastations caused by the COVID-19 Pandemic...</p>
               <button class="btn-primary news__btn">Read More</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-
 
   </main>
 
@@ -307,7 +333,7 @@
       <div class="container top__container">
         <div class="footer__info">
           <a href="#">
-            <img src="./images/logo.png" alt="footer logo" width="280" height="100">
+            <img src="./images/logo.png" alt="footer logo" width="250" height="100">
           </a>
           <p>Peter and Mirian Foundation is Nigeria's foremost supplier and installer of high-end and smart electronic
             security products.</p>
@@ -401,8 +427,7 @@
           <h2>Contact Us</h2>
           <ul>
             <li>
-
-              <span><i class="fa-solid fa-location-dot"></i> Head Offise:</span>
+              <span><i class="fa-solid fa-location-dot contact__icon"></i> Head Offise:</span>
               <span>
                 189 Bornon way,
                 Ebute Metta,
@@ -411,8 +436,7 @@
               </span>
             </li>
             <li>
-
-              <span><i class="fa-solid fa-location-dot"></i> Branch Office::</span>
+              <span><i class="fa-solid fa-location-dot contact__icon"></i> Branch Office::</span>
               <span>
                 25 Okolo Lane,
                 Emene,
@@ -422,15 +446,15 @@
             </li>
             <li>
               <a href="tel:+234 (0)9155502778">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-phone contact__icon"></i>
                 +234 (0)9155502778</a>
               <a href="tel:+234 (0)9095585955">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-phone contact__icon"></i>
                 +234 (0)9095585955</a>
             </li>
             <li>
               <a href="mailto:admin@PeterandMirian.org">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope contact__icon"></i>
                 admin@PeterandMirian.org</a>
             </li>
           </ul>
