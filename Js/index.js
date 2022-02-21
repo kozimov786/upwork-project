@@ -2,6 +2,7 @@ const btn = document.querySelector('.burger__btn')
 const Menu = document.querySelector('.nav');
 let navbar = document.querySelector('.navbar')
 
+
 btn.addEventListener('click', () => {
   Menu.classList.toggle('block')
 })
