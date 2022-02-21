@@ -518,7 +518,7 @@ p {
 }
 .about__service {
   margin-top: 60px;
-  width: 456px;
+  max-width: 456px;
 }
 .about__badge {
   padding: 5px 20px;
@@ -1176,12 +1176,8 @@ p {
   .slider__heading {
     font-size: 16px;
   }
-  .navbar__container {
-    display: inline-flex;
-    max-width: 480px;
-  }
   .nav__logo--img {
-    width: 200px;
+    width: 280px;
     object-fit: contain;
     margin: 0;
   }
