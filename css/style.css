@@ -234,6 +234,7 @@ p {
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
+  transition: all 0.3s ease;
 }
 .btn-primary:hover {
   background-color: #006d5b;
@@ -305,7 +306,7 @@ p {
   position: fixed;
   width: 100%;
   z-index: 9999;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 .sticky {
   position: fixed;
@@ -356,6 +357,7 @@ p {
   padding: 8px 10px;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s ease;
 }
 .menu__item:not(:last-child) {
   margin-right: 20px;
@@ -371,6 +373,7 @@ p {
   width: 200px;
   position: absolute;
   top: 100%;
+  transition: all 0.3s ease;
   left: 0;
   display: none;
   box-shadow: 0px 2px 5px 0px rgb(125 140 159 / 46%);
@@ -421,6 +424,7 @@ p {
   position: absolute;
   color: #fff;
   right: 24px;
+  cursor: pointer;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
@@ -647,13 +651,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 .area__card:hover .area__btn {
   background-color: rgba(255, 230, 88, 0.9);
+  transition: all 0.5s ease;
 }
 .area__card:hover .area__link {
   color: #4f0269;
   border-color: #4f0269;
+  transition: all 0.3s ease;
 }
 
 /* TRUSTEES */
@@ -749,6 +756,7 @@ p {
 }
 .trustees .tns-controls button:hover {
   background-color: #ffcc01;
+  transition: all 0.3s ease;
 }
 /* NEWS_SECTION */
 
@@ -862,6 +870,7 @@ p {
 }
 .footer__menu_link:hover {
   color: gold;
+  transition: all 0.3s ease;
 }
 .footer__news {
   width: 300px;
@@ -938,6 +947,7 @@ p {
 }
 .footer__contact a:hover {
   color: gold;
+  transition: all 0.3s ease;
 }
 .footer h2 {
   font-size: 24px;
