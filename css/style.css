@@ -189,7 +189,7 @@ body {
   color: #191919;
 }
 .container {
-  max-width: 1280px;
+  max-width: 1180px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -275,7 +275,7 @@ p {
   font-size: 16px;
   font-weight: normal;
   line-height: 21px;
-  padding: 10px 15px;
+  padding: 15px;
   position: relative;
 }
 .topbar__item > div {
@@ -287,27 +287,34 @@ p {
   text-transform: uppercase;
   margin-left: 6px;
 }
+.topbar__email {
+  text-transform: lowercase;
+}
 .topbar__link--border::after {
   content: "";
   width: 1px;
-  height: 25px;
+  height: 15px;
   background-color: #fff;
   display: block;
   position: absolute;
   right: 0;
-  top: 8px;
+  top: 18px;
 }
 .navbar {
-  top: 50px;
+  top: 70px;
   position: fixed;
   width: 100%;
   z-index: 9999;
+  transition: all 0.3 ease;
 }
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   background: #ece9d8;
+}
+.sticky .nav__logo--img {
+  filter: none;
 }
 .sticky .burger__btn {
   color: #000;
@@ -337,6 +344,7 @@ p {
   width: 380px;
   height: 87px;
   object-fit: fill;
+  filter: drop-shadow(1px 0px 12px #000);
 }
 .menu__link {
   font-size: 14px;
@@ -348,6 +356,9 @@ p {
   padding: 8px 10px;
   cursor: pointer;
   position: relative;
+}
+.menu__item:not(:last-child) {
+  margin-right: 20px;
 }
 .menu__item:hover {
   background-color: #4f0269;
@@ -432,7 +443,7 @@ p {
   line-height: 28px;
   letter-spacing: 0.1px;
   display: inline-block;
-  padding: 0 20px;
+  padding: 10px 20px;
   border-radius: 3px;
 }
 .slider1 {
@@ -477,7 +488,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  bottom: 150px;
+  top: 620px;
   left: 50%;
   transform: translateX(-70%);
 }
@@ -538,20 +549,20 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .about__btn:hover {
   color: #000;
   background-color: #ffcc01;
 }
 .about__heading {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   line-height: 1.2;
   font-weight: 600;
   font-size: 1.5em;
   font-family: var(--Exo);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .about__text {
   font-size: 16px;
@@ -559,7 +570,8 @@ p {
   font-family: var(--Treb);
 }
 .about__service h3 {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  font-family: var(--Exo);
 }
 
 .about__item {
@@ -568,6 +580,7 @@ p {
 }
 .about__img {
   margin-right: 20px;
+  object-fit: fill;
 }
 
 /* AREA_STYLES */
@@ -588,7 +601,7 @@ p {
   color: #006d5b;
 }
 .area__card {
-  width: 386px;
+  width: 366px;
   height: 381px;
   position: relative;
   display: inline-block;
@@ -608,7 +621,7 @@ p {
   width: 260px;
   background: rgba(0, 109, 91, 0.8);
   margin-top: 280px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 .area__link {
   padding: 10px;
@@ -660,12 +673,12 @@ p {
   align-items: center;
 }
 .trustees__container {
-  max-width: 1300px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 .trustees .tns-outer {
-  max-width: 1280px;
+  max-width: 1170px;
   margin-left: 30px;
 }
 
@@ -676,20 +689,20 @@ p {
 }
 .card {
   width: 100%;
-  height: 350px;
+  height: 327px;
 }
 .card__bottom {
   padding: 5px;
   background-color: #fff;
-  width: 285px;
+  width: 265px;
   font-family: var(--Exo);
 }
 .card__img {
-  width: 285px;
+  width: 265px;
+  height: 270px;
 }
 
 .card__title {
-  margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
   font-size: 18px;
@@ -702,7 +715,6 @@ p {
   font-weight: 400;
   line-height: 18px;
   font-size: 16px;
-  padding-bottom: 5px;
 }
 .trustees .tns-nav {
   display: none;
@@ -711,25 +723,33 @@ p {
   position: absolute;
   z-index: 99;
   top: 18%;
-  right: 7%;
+  right: 10.5%;
 }
 
 .trustees .tns-controls button:first-child {
   width: 30px;
   height: 30px;
   border: none;
-  background-color: #232a80;
+  background-image: url("../images/iconmonstr-arrow-64.svg");
+  background-color: #4f0269;
+  background-position: center center;
+  background-repeat: no-repeat;
   margin-right: 5px;
   color: #fff;
 }
 .trustees .tns-controls button:last-child {
   width: 30px;
   height: 30px;
+  background-image: url("../images/iconmonstr-arrow-25.svg");
   color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
   border: none;
-  background-color: #232a80;
+  background-color: #4f0269;
 }
-
+.trustees .tns-controls button:hover {
+  background-color: #ffcc01;
+}
 /* NEWS_SECTION */
 
 .news {
@@ -747,7 +767,7 @@ p {
   justify-content: space-between;
 }
 .news__card {
-  width: 390px;
+  width: 365px;
   background-color: #fff;
   position: relative;
   font-family: var(--Treb);
@@ -774,6 +794,7 @@ p {
   line-height: 23px;
   margin-bottom: 3px;
   font-family: var(--Ubuntu);
+  white-space: nowrap;
 }
 .card__decr {
   font-size: 16px;
@@ -785,7 +806,7 @@ p {
   font-size: 16px;
   padding: 6px 12px;
   border: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .news__btn:hover {
   background-color: #006d5b;
@@ -797,9 +818,9 @@ p {
   color: #fff;
 }
 .top__footer {
-  background-color: #0d3932;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  background-color: #006d5b;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .top__container {
@@ -809,7 +830,6 @@ p {
 }
 .footer__info {
   width: 250px;
-  margin-top: 60px;
 }
 .footer__info--decr {
   font-family: var(--Treb);
@@ -822,6 +842,7 @@ p {
 }
 .footer__info--img {
   object-fit: contain;
+  filter: drop-shadow(1px 0px 12px #000);
 }
 .footer__menu_item {
   font-size: 1rem;
@@ -899,7 +920,18 @@ p {
 .footer__contact li {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+}
+.footer__contact div {
+  display: flex;
+  align-items: center;
+}
+.footer__contact span {
+  margin-left: 23px;
+}
+.footer__contact b {
+  font-weight: 700;
+  font-family: var(--Exo);
 }
 .contact__icon {
   margin-right: 10px;
@@ -920,10 +952,53 @@ p {
   width: 50px;
   height: 3px;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 3px;
+}
+.footer__contact-number {
+  margin-left: 30px;
+}
+.footer__contact-brands {
+  display: flex;
+  align-items: center;
+}
+.footer__brands {
+  display: flex;
+  align-items: center;
+}
+.footer__brand-text {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.footer__brand {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__brand:hover {
+  color: #fff !important;
+}
+.brand__facebook {
+  background-color: rgb(60, 89, 125);
+  margin-right: 5px;
+}
+.brand__twitter {
+  background-color: #54aced;
+  margin-right: 5px;
+}
+.brand__linkedin {
+  background-color: #0976b4;
+  margin-right: 5px;
+}
+.brand__youtube {
+  background-color: #ff0000;
 }
 .right__arrow {
+  background-color: #fff;
   color: #000;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px #000;
 }
 .bottom__footer {
   background-color: #005748;
@@ -931,6 +1006,7 @@ p {
   padding-bottom: 25px;
   font-family: var(--Treb);
 }
+
 .bottom__footer p {
   margin: 0;
 }
@@ -1077,6 +1153,9 @@ p {
     margin-bottom: 30px;
     margin-right: 0;
   }
+  .about__service {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1105,9 +1184,18 @@ p {
     height: 325px;
   }
   .hero .tns-nav {
-    bottom: 15%;
+    top: 645px;
   }
 }
+@media only screen and (max-width: 700px) {
+  .news__card {
+    width: 450px;
+  }
+  .news__img {
+    width: 450px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .card__bottom {
     width: 270px;
@@ -1180,16 +1268,28 @@ p {
   .card__img {
     width: 225px;
   }
+  .nav__logo--img {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 544px) {
   .hero .tns-nav {
     bottom: 12%;
+  }
+  .trustees .tns-controls {
+    right: 6%;
   }
   .card__bottom {
     width: 100%;
   }
   .card__img {
     width: 100%;
+  }
+  .news__card {
+    width: 350px;
+  }
+  .news__img {
+    width: 350px;
   }
 }
 @media only screen and (max-width: 480px) {
