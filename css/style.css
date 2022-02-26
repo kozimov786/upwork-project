@@ -303,7 +303,7 @@ p {
   top: 18px;
 }
 .navbar {
-  top: 50px;
+  top: 60px;
   position: fixed;
   width: 100%;
   z-index: 9999;
@@ -346,7 +346,7 @@ p {
   width: 380px;
   height: 87px;
   object-fit: fill;
-  filter: drop-shadow(1px 0px 10px #fff);
+  filter: drop-shadow(0px 0px 1px #fff);
 }
 .menu__link {
   font-size: 14px;
@@ -448,7 +448,7 @@ p {
   line-height: 28px;
   letter-spacing: 0.1px;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 8px 10px;
   border-radius: 3px;
 }
 .slider1 {
@@ -459,7 +459,7 @@ p {
 }
 .hero__slider--img {
   width: 100%;
-  height: 627px;
+  height: 600px;
 }
 .slider2 {
   width: 100%;
@@ -552,7 +552,6 @@ p {
   padding: 0.375rem 0.75rem;
   font-weight: 400;
   font-size: 1rem;
-  text-transform: capitalize;
   line-height: 1.5;
   border-radius: 0.25rem;
   margin-top: 10px;
@@ -562,8 +561,8 @@ p {
   background-color: #ffcc01;
 }
 .about__heading {
-  margin-top: 26px;
-  margin-bottom: 26px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   line-height: 1.2;
   font-weight: 600;
   font-size: 1.5em;
@@ -587,7 +586,7 @@ p {
   align-items: flex-start;
 }
 .about__img {
-  margin-right: 20px;
+  margin-right: 10px;
   object-fit: fill;
 }
 
@@ -714,8 +713,9 @@ p {
 }
 
 .card__title {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   text-align: center;
+  color: #000;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -733,7 +733,7 @@ p {
 .trustees .tns-controls {
   position: absolute;
   z-index: 99;
-  top: 18%;
+  top: 20%;
   right: 10.5%;
 }
 
@@ -742,6 +742,7 @@ p {
   height: 30px;
   border: none;
   background-image: url("../images/iconmonstr-arrow-64.svg");
+  background-size: 12px 20px, contain;
   background-color: #4f0269;
   background-position: center center;
   background-repeat: no-repeat;
@@ -753,6 +754,8 @@ p {
   height: 30px;
   background-image: url("../images/iconmonstr-arrow-25.svg");
   color: #fff;
+  background-size: 12px 20px, contain;
+
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -779,13 +782,14 @@ p {
   justify-content: space-between;
 }
 .news__card {
-  width: 365px;
+  width: 355px;
   background-color: #fff;
   position: relative;
   font-family: var(--Treb);
 }
 .card__info {
   padding: 15px;
+  overflow: hidden;
 }
 .news__badge {
   width: 67px;
@@ -810,21 +814,15 @@ p {
 }
 .card__decr {
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   line-height: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
-.news__btn {
-  background-color: #4f0269;
-  font-size: 16px;
-  padding: 6px 12px;
-  border: none;
-  text-transform: capitalize;
-}
-.news__btn:hover {
-  background-color: #006d5b;
-  border: none;
+
+.card__info .about__btn {
+  margin-top: 0;
+  text-transform: initial;
 }
 
 /* FOOTER_STYLE */
@@ -833,8 +831,8 @@ p {
 }
 .top__footer {
   background-color: #006d5b;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 39px;
 }
 
 .top__container {
@@ -849,7 +847,7 @@ p {
   font-family: var(--Treb);
   text-align: center;
   margin: 0;
-  margin-top: 9px;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -858,7 +856,7 @@ p {
 }
 .footer__info--img {
   object-fit: contain;
-  filter: drop-shadow(1px 0px 10px #fff);
+  filter: drop-shadow(0px 0px 1px #fff);
 }
 .footer__menu_item {
   font-size: 1rem;
@@ -874,7 +872,7 @@ p {
   border-bottom: 1px dotted #4c988c;
 }
 .footer__menu_link {
-  margin-left: 10px;
+  margin-left: 7px;
 }
 .footer__menu_link:hover {
   color: gold;
@@ -890,12 +888,13 @@ p {
   text-align: justify;
   text-justify: auto;
   width: 100%;
+  font-family: var(--Treb);
+  margin-bottom: 0;
 }
 .footer__new_item {
   position: relative;
   margin-bottom: 7px;
   display: flex;
-  align-items: center;
 }
 .footer__new_info h4 {
   font-family: var(--Exo);
@@ -908,10 +907,12 @@ p {
 .footer__new_info:hover.footer__new_info a {
   color: rgb(255, 204, 1);
 }
-
+.footer__new--img {
+  margin-top: 5px;
+}
 .footer__overlay {
   position: absolute;
-  top: 14px;
+  top: 5px;
   left: 0;
   width: 75px;
   height: 80px;
@@ -966,7 +967,7 @@ p {
   font-size: 24px;
   font-family: var(--Exo);
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: inline-flex;
   flex-direction: column;
 }
@@ -975,7 +976,6 @@ p {
   width: 50px;
   height: 3px;
   background-color: #fff;
-  margin-top: 3px;
 }
 .footer__contact-number {
   margin-left: 30px;
@@ -983,6 +983,7 @@ p {
 .footer__contact-brands {
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 .footer__brands {
   display: flex;
@@ -990,7 +991,9 @@ p {
 }
 .footer__brand-text {
   margin-bottom: 0;
-  margin-right: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-family: var(--Exo);
 }
 .footer__brand {
   width: 32px;
@@ -1001,6 +1004,7 @@ p {
 }
 .footer__brand:hover {
   color: #fff !important;
+  filter: grayscale(1);
 }
 .brand__facebook {
   background-color: rgb(60, 89, 125);
@@ -1194,10 +1198,25 @@ p {
   .hero__slider--img {
     height: 331px;
   }
+  .news__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .news__card {
+    margin-left: 0;
+  }
+  .news__card {
+    width: 550px;
+  }
+  .news__img {
+    width: 550px;
+  }
   .slider__info {
     background-color: #435060;
     width: 100%;
-    padding: 40px 20px 80px;
+    padding: 20px 20px 80px;
     position: absolute;
     bottom: 0;
     margin-top: 180px;
@@ -1297,13 +1316,17 @@ p {
     bottom: 12%;
   }
   .trustees .tns-controls {
-    right: 6%;
+    right: 9%;
+  }
+  .trustees .tns-outer {
+    margin-left: 60px;
   }
   .card__bottom {
-    width: 100%;
+    width: 200px;
   }
   .card__img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
   }
   .news__card {
     width: 350px;
@@ -1312,10 +1335,20 @@ p {
     width: 350px;
   }
 }
+@media only screen and (max-width: 510px) {
+  .card__bottom {
+    width: 180px;
+  }
+  .card__img {
+    width: 180px;
+    height: 180px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .slider__heading {
     font-size: 16px;
   }
+
   .nav__logo--img {
     width: 280px;
     object-fit: contain;
@@ -1330,6 +1363,17 @@ p {
   }
   .about__item .about__text {
     width: 250px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .card__bottom {
+    width: 100%;
+  }
+  .card__img {
+    width: 100%;
+  }
+  .trustees .tns-outer {
+    margin-left: 30px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1350,6 +1394,7 @@ p {
   .trustees .tns-controls {
     top: 95px;
   }
+
   .news__card {
     width: 320px;
   }
